@@ -44,7 +44,7 @@
 		</repository>
   	</distributionManagement>
 	<properties>
-    <sonar.host.url>http://localhost:9000</sonar.host.url>
+    <sonar.host.url>http://13.53.35.158:9000/sonar</sonar.host.url>
 </properties>
 	
 <build>
