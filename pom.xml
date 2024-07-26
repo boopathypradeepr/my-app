@@ -43,6 +43,9 @@
 		    <url>http://13.233.125.37:8081/repository/maven-releases/</url>
 		</repository>
   	</distributionManagement>
+	<properties>
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
+</properties>
 	
 <build>
     <plugins>
@@ -60,27 +63,7 @@
     <artifactId>maven-war-plugin</artifactId>
     <version>3.3.1</version>
 </plugin>
-	
-        <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.8</version>
-            <executions>
-                <execution>
-                    <id>prepare-agent</id>
-                    <goals>
-                        <goal>prepare-agent</goal>
-                    </goals>
-                </execution>
-                <execution>
-                    <id>report</id>
-                    <goals>
-                        <goal>report</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-               <plugin>
+	    <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>sonar-maven-plugin</artifactId>
             <version>2.6</version>
